@@ -1,0 +1,73 @@
+\documentclass[]{spie}  %>>> use for US letter paper
+%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%\documentclass[nocompress]{spie}  %>>> to avoid compression of citations
+
+\renewcommand{\baselinestretch}{1.0} % Change to 1.65 for double spacing
+ 
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{physics}
+\usepackage{enumitem}
+\usepackage{caption}  % Required for subfigures
+\usepackage{subcaption}  % Required for subfigures
+
+\newcommand{\note}[1]{{\color{red}[#1]}}
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\wfsc}{WFS\&C}
+
+\newcommand{\Eq}[1]{Eq.~\eqref{#1}}
+\newcommand{\Sec}[1]{Section \ref{#1}}
+\newcommand{\Fig}[1]{Fig.~\ref{#1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\renewcommand{\Re}{\mathrm{Re}}  % Remove the extra whitespace between Re and the following bracket, from physics package
+\renewcommand{\Im}{\mathrm{Im}}
+
+\title{SPIE proceedings paper}
+
+\author[a]{Scott D. Will}
+% \author[a]{Tyler D. Groff}
+% \author[a]{Hari B. Subedi}
+% \author[a]{Neil T. Zimmerman}
+% \author[a]{Michael W. McElwain}
+% \author[a]{Christopher C. Stark}
+% \author[a]{Roser Juanola-Parramon}
+\affil[a]{NASA Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt, MD 20771, USA}
+
+% \author[b]{R\'{e}mi Soummer}
+% \author[b]{Laurent Pueyo}
+% \author[b]{Marshall D. Perrin}
+% \author[b]{Emiel H. Por}
+% \author[b]{Meiji Nguyen}
+% \author[b]{Rapha\"{e}l Pourcelot}
+% \author[b]{Ananya Sahoo}
+% \affil[b]{Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218, USA}
+
+
+\authorinfo{Further author information: (Send correspondence to S.D.W.)\\S.D.W.: E-mail: scott.d.will@nasa.gov}
+
+% Option to view page numbers
+\pagestyle{empty} % change to \pagestyle{plain} for page numbers   
+\setcounter{page}{301} % Set start page numbering at e.g. 301
+ 
+\begin{document} 
+\maketitle
+
+\begin{abstract}
+Abstract goes here.
+\end{abstract}
+
+% Include a list of keywords after the abstract 
+\keywords{Coronagraphy, high-contrast imaging, wavefront sensing, wavefront control, deformable mirrors}
+
+\section{Introduction}
+\label{sec:introduction}
+A reference \cite{soummer2003}.
+
+\section{Acknowledgments}
+
+\bibliography{references}
+\bibliographystyle{spiebib}
+
+\end{document}
